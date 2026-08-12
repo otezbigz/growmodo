@@ -25,7 +25,7 @@ define( 'DB_NAME', getenv('DB_NAME') ?: 'estateinDB' );
 
 /** Database username */
 // define( 'DB_USER', 'root' );
-define( 'DB_USER', getenv('DB_USER') ?: 'root' );
+define( 'DB_USER', getenv('DB_USERNAME') ?: (getenv('DB_USER') ?: 'root') );
 
 /** Database password */
 // define( 'DB_PASSWORD', '' );
